@@ -1,0 +1,28 @@
+.header {
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+  &__row {
+    @include make-row;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &__logo {
+    @include make-col(3);
+    @include media-breakpoint-down(xs) {
+      @include make-col(12);
+    }
+    &__link {
+      &:hover {
+
+      }
+      &:before {
+
+      }
+    }
+  }
+  &__nav {
+    @include make-col(9);
+  }
+}
